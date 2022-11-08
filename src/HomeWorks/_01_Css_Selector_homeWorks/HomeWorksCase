@@ -1,0 +1,98 @@
+Aşağıdaki testlerde aranan elamanın kendi id veya name ini kullanmadan SADECE CssSelector yardımı ile gerekiyorsa Child ve kardeş yolu ile bularak testleri yapınız.
+
+
+
+1-
+
+/*
+
+    1) Bu siteye gidin. ->  http://demoqa.com/text-box
+
+    2) Full Name kısmına "Automation" girin. [placeholder='Full Name']
+
+    3) Email kısmına "Testing@gmail.com" girin.   div[id='userEmail-wrapper']>:nth-child(2)>input ||  [placeholder='name@example.com']
+
+    4) Current Address kısmına "Testing Current Address" girin.  ||  ||  [placeholder='Current Address']
+
+    5) Permanent Address kısmına "Testing Permanent Address" girin. || ||  div[id='permanentAddress-wrapper']>:nth-child(2)>textarea
+
+    6) Submit butonuna tıklayınız.   || ||  .text-right.col-md-2.col-sm-12>button
+
+    7) Full Name'in, "Automation"ı içinde bulundurduğunu doğrulayın.  (//div[@id='output']//p)[1]
+
+    8) Email'in, "Testing"ı içinde bulundurduğunu doğrulayın.
+
+ */
+
+2-
+1) Bu siteye gidin. -> https://demo.applitools.com/
+
+2) Username kısmına "ttechno@gmail.com" girin.  userName:       [class='form-group']>input[type='text']
+
+3) Password kısmına "techno123." girin.
+
+4) "Sign in" buttonunan tıklayınız.
+
+5) "Your nearest branch closes in: 30m 5s" yazısının göründüğünü doğrulayınız.
+
+
+
+3-
+1) Bu siteye gidin. -> https://www.snapdeal.com/
+
+2) "teddy bear" aratın ve  Search butonuna tıklayın.
+
+önce tıkla div[class='overlap']
+sonra send keys>>>>> div[class='overlap']+input
+ardından search >>>>  div[class='col-xs-14 search-box-wrapper']>button
+
+
+3) Bu yazının göründüğünü doğrulayınız. -> (We've got 297 results for 'teddy bear') ||  div[id='searchMessageContainer']>div>span
+Not: Bu yazıdaki sayı değişiklik gösterebilir. Önemli olan cümle kalıbı.
+
+
+4-
+
+Bu websitesine gidiniz.  [https://testpages.herokuapp.com/styled/index.html]
+
+Calculate'e tıklayınız.        [href='/calculate.php']
+
+         İlk input'a herhangi bir sayı giriniz.    [action='calculate.php']>:nth-child(1)
+
+         İkinci input'a herhangi bir sayı giriniz.   [action='calculate.php']>:nth-child(3)
+
+Calculate button'una tıklayınız. [action='calculate.php']>:nth-child(4)
+
+Sonucu alınız.    body>span
+
+Sonucu yazdırınız.  body>span
+
+
+
+
+5-
+
+Bu websitesine gidiniz.             [https://testpages.herokuapp.com/styled/index.html]
+
+Fake Alerts' tıklayınız.            [class='page-body']>ul>:nth-child(5)>ul>:nth-child(2)>a
+
+Show Alert Box'a tıklayınız.        input[onclick='show_alert()']
+
+Ok'a tıklayınız.                    [class='dialog-actions']>:first-child
+
+Alert kapanmalıdır.
+
+
+
+
+6-
+
+Bu siteye gidiniz.  https://testpages.herokuapp.com/styled/index.html
+
+Fake Alerts'e tıklayınız.
+
+Show modal dialog buttonuna tıklayınız.   show_modal()
+
+Ok'a tıklayınız.
+
+Alert kapanmalıdır.

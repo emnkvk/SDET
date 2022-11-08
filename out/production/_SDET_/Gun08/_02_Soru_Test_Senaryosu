@@ -1,0 +1,7 @@
+//        Test Senaryosu
+//        1- https://www.facebook.com/  sayfasına gidiniz
+//        2- CreateNewAccount a tıklatınız.
+//        3- Açılan yeni pencerede isim, soyisim ve emaili giriniz. //input[@name='firstname']  //input[@name='lastname'] //input[@name='reg_email__']
+//        4- Dogum tarihinizi Select sınıfı ile seçiniz   select[id='day']  select[id='month']  select[id='year']
+//        5- Email i tekrar girmenizi isteyen bir input daha açıldığını    input[name='reg_email__']   input[name='reg_email_confirmation__']
+//        öncesinde de görünmediğini assert ile doğrulayınız.

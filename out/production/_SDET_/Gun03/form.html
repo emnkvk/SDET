@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+<style>
+form {
+  display: block;
+  margin-top: 0em;
+}
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+input {
+  width: 100%;
+}
+input[type=text],input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid red;
+  border-radius: 4px;
+}
+input[type=text]:focus,input[type=password]:focus {
+  background-color: lightblue;
+}
+select {
+  width: 100%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+button[type=submit]{
+  color : #3956ab;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px;
+  border-radius: 9px;
+}
+button[type=submit]:hover {
+  color : #3956ab;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px;
+  border-radius: 9px;
+}
+</style>
+<body>
+<h1>FORM ELEMANLARI</h1>
+<form class="form">
+
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="name"/><br>
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" placeholder="Password"><br>
+
+    <textarea name="textarea" id="text-area" cols="30" rows="10" placeholder="Entry Message"></textarea><br>
+    <br>
+<!--    <input type="radio" id="html" name="fav_language" value="HTML">-->
+<!--    <label for="html">HTML</label><br>-->
+<!--    <input type="radio" id="css" name="fav_language" value="CSS" checked="checked">-->
+<!--    <label for="css">CSS</label><br>-->
+<!--    <input type="radio" id="javascript" name="fav_language" value="JavaScript">-->
+<!--    <label for="javascript">JavaScript</label><br><br>-->
+<!--    <input type="submit" value="Submit">-->
+    <select name="select" id="select-id">
+        <option value="0">Selenium</option>
+        <option value="1">TestNG</option>
+        <option value="2">Cucumber</option>
+
+    </select><br>
+    <button type="submit">SUBMIT</button>
+
+
+
+
+</form>
+</body>
+</html>
